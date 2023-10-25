@@ -1,10 +1,13 @@
 package com.makarov.testProject.controller;
 
+import com.makarov.testProject.Service.TestService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/test")
 public class TestController {
+
+    private TestService testService;
 
     @GetMapping
     public void test() {
@@ -23,5 +26,6 @@ public class TestController {
     @DeleteMapping
     public void delete(){
         System.out.println("delete");
+        testService.delete();
     }
 }
