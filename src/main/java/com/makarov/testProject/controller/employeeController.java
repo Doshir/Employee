@@ -37,8 +37,11 @@ public class employeeController {
 
    @PostMapping("/addEmployee")
     public String employeeSave(@RequestBody Employee employee){
+       System.out.println("Helooo");
         return employeeService.employeeNotEight(employee);
+
     }
+
 
     @DeleteMapping("/deleteEmployee/{id}")
     public String employeeDeleted(@PathVariable("id") long id )
