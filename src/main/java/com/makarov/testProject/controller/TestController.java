@@ -1,6 +1,7 @@
 package com.makarov.testProject.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,4 +14,8 @@ public class TestController {
         System.out.println("get");
     }
 
+    @PutMapping
+    public void put(){
+        System.out.println("put");
+    }
 }
