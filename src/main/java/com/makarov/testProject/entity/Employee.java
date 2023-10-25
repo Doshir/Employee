@@ -22,6 +22,7 @@ public class Employee {
     private String jobTittle;
     private String gender;
     private LocalDate dateOfBirth;
+    private String changes;
 
 
     public Employee() {
