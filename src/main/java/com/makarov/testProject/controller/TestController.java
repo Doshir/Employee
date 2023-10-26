@@ -1,6 +1,5 @@
 package com.makarov.testProject.controller;
 
-import com.makarov.testProject.Service.TestService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -16,6 +15,10 @@ public class TestController {
     @PostMapping
     public void testPost(){
         System.out.println("test post");
+    }
+    @DeleteMapping
+    public void deleteById(){
+        System.out.println("Deleted");
     }
 
     @PutMapping
