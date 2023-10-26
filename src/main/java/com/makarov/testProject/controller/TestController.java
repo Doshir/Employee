@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/test")
 public class TestController {
 
+    private TestService testService;
+
     @GetMapping
     public void test() {
         System.out.println("get");
@@ -22,5 +24,11 @@ public class TestController {
     @PutMapping
     public void put(){
         System.out.println("put");
+    }
+
+    @DeleteMapping
+    public void delete(){
+        System.out.println("delete");
+        testService.delete();
     }
 }
